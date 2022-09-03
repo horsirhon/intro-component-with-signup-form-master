@@ -1,0 +1,152 @@
+/* ********** VARIABLES ********** */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --greyish-blue: hsl(246, 25%, 77%);
+    --font-size: 16px;
+    --font-family: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: var(--red);
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(images/bg-intro-mobile.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    padding: 7rem 5vw;
+}
+
+
+#left{
+    color: var(--white);
+}
+#left h1 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+#left p {
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 4rem;
+}
+
+
+#right, #left {
+    max-width: 405px;
+}
+#banner {
+    background-color: var(--blue);
+    border-radius: 15px;
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.163);
+    color: var(--white);
+    line-height: 1.5rem;
+    padding: 1.2rem 4rem;
+    margin-bottom: 2rem;
+}
+#form {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.163);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.7rem 1.2rem;
+    width: 90vw;
+    max-width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    max-width: 100%;
+}
+form input{
+    display: block;
+    padding: 1.1rem 1.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.107);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+form button {
+    background-color: var(--green);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 0px hsl(154, 56%, 49%);
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.1rem;
+    padding: 1.2rem 0 .8rem;
+}
+#terms {
+    font-size: .72rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    width: 70vw;
+    max-width: 290px;
+    color: var(--greyish-blue);
+}
+#terms span {
+    color: var(--red);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (min-width: 1440px) {
+    body{
+        background-image: url(images/bg-intro-desktop.png);
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+    }
+    #banner {
+        padding: 1.2rem 3rem;
+    }
+    #left {
+        text-align: left;
+        width: 35vw;
+        max-width: 500px;
+    }
+    #left h1{
+        width: 400px;
+        font-size: 2.5rem;
+    }
+    #left p {
+        width: 35vw;
+        max-width: 500px;
+    }
+    #right {
+        margin-left: 4rem;
+        max-width: 500px;
+    }
+    div#form {
+        padding: 2rem;
+    }
+    form {
+        align-self: stretch;
+        max-width: 100%;
+    }
+}
