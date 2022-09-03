@@ -115,7 +115,7 @@ form button {
 
 
 
-@media (min-width: 1440px) {
+@media (min-width: 1360px) {
     body{
         background-image: url(images/bg-intro-desktop.png);
         flex-direction: row;
